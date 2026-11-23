@@ -1,1 +1,19 @@
-{"name":"Mathe-Ozean – Die lebendige Wunderwelt","short_name":"Mathe-Ozean","description":"Mathematik spielerisch im lebendigen 3D-Ozean lernen","start_url":"./","scope":"./","display":"standalone","orientation":"portrait","background_color":"#032943","theme_color":"#063e65","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "name": "Mathe-Ozean – Helle Lagune",
+  "short_name": "Mathe-Ozean",
+  "description": "Mathematik spielerisch im lebendigen 3D-Ozean lernen",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0875a3",
+  "theme_color": "#1ca7c9",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
