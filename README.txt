@@ -1,1 +1,9 @@
-Mathe-Ozean Version 6. Alle Dateien und den Ordner assets in das Repository-Hauptverzeichnis hochladen. Echte 3D-Geometrie in Three.js; sieben lokal gespeicherte, eigens synthetisierte WAV-Soundeffekte; Fortschritt und Missionen. ACHTUNG: Three.js wird derzeit ueber CDN geladen. Daher ist ein garantierter vollstaendiger Offline-Start noch NICHT gegeben. Fuer echte vollstaendige Offlinefaehigkeit muss three.module.js lokal unter vendor/ eingebunden und im Service Worker gecacht werden. Grafik und Audio sind keine professionellen Studioassets. Bitte auf Android testen.
+Mathe-Ozean 7 – Stabilitätsupdate
+
+Alle Dateien und den assets-Ordner in die Wurzel des bestehenden GitHub-Repositories hochladen. index.html, math.js, game3d.js, sw.js, manifest.webmanifest, icon.svg und assets/ muessen vorhanden sein.
+
+Rechenbuttons werden unabhängig von Three.js in math.js initialisiert. Bei 3D-Ladefehlern zeigt die App eine einfache animierte Ersatzszene und Mathe bleibt nutzbar.
+
+WICHTIG: Three.js wird weiterhin von einem CDN geladen. Daher ist echtes 3D ohne Netz nach einer Neuinstallation NICHT garantiert. Die Offline-Funktion der Mathematik und der lokal gespeicherten Sounds ist dagegen vorgesehen. Professionelle 3D-Modelle und hochwertige Audioaufnahmen sind NICHT enthalten.
+
+Vor Veröffentlichung im Browser testen.
