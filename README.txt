@@ -1,9 +1,13 @@
-MATHE-OZEAN 4.0 — 3D-Prototyp
+MATHE-OZEAN WUNDERWELT V5
 
-GitHub: Die fünf Web-Dateien aus diesem Ordner direkt ins Repository-Hauptverzeichnis hochladen. Alte game.js darf entfernt werden.
+UPLOAD: Alle Dateien aus diesem Ordner direkt in das Hauptverzeichnis des bestehenden GitHub-Repositories hochladen (nicht den Ordner selbst).
 
-WICHTIG: Die 3D-Engine Three.js wird beim ersten Besuch von cdn.jsdelivr.net geladen. Für Offline-Nutzung muss der Service Worker die Engine erfolgreich zwischenspeichern. Zum Prüfen nach dem ersten Laden Flugmodus einschalten, App schließen und erneut öffnen.
+ENTHALTEN: 12 verschiedene prozedurale echte 3D-Figuren (max. 12 gleichzeitig), animierte Riffwelt, berührbare Charaktere, 5 Rechenmodi, Fortschritt, Belohnung alle 5 richtigen Aufgaben, lokal gespeicherter Fortschritt, Synthesizer-Sounds.
 
-Eine vollständig selbst enthaltene Offline-Distribution würde die Three.js-Datei im Repository benötigen. Sie ist in diesem Paket NICHT enthalten, da der Download der Bibliothek hier nicht möglich war. Für eine zuverlässige Offline-App die Datei https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js herunterladen, im Ordner vendor/three.module.js ablegen und in game3d.js sowie sw.js die CDN-Adresse durch ./vendor/three.module.js ersetzen.
+EHRLICHE GRENZEN:
+- Three.js wird über CDN geladen. Die Engine-Datei ist nicht im ZIP enthalten, weil in der Erstellungsumgebung kein Netzwerkzugriff auf das CDN möglich war. Die Web-App benötigt daher beim ersten Start Internet. Vollständige, garantierte Offlinefähigkeit kann mit diesem Paket nicht zugesichert werden. Für echtes Offline-Bundling muss three.module.js lokal als Datei eingebunden und im Service Worker gecacht werden.
+- Die Sounds sind synthetisch, keine professionell aufgenommenen Stimmen/Lacher.
+- Die Figuren sind geometrisch erzeugte 3D-Modelle, keine extern produzierten, geriggten Filmcharaktere.
+- Browser-/Android-Tests waren in der Erstellungsumgebung nicht möglich.
 
-Version 4 ist ein nicht auf Android getesteter Prototyp. Die 3D-Modelle sind geometrisch erzeugt, keine professionellen Charaktermodelle. Keine aufgenommenen Stimmen, nur synthetische Signaltöne.
+Zum späteren Offline-Bundling: Lade https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js herunter, speichere sie im selben Ordner und ersetze in game3d.js den Import-URL durch './three.module.js'. Füge './three.module.js' der FILES-Liste in sw.js hinzu, erhöhe den CACHE-Namen und lade alles erneut hoch.
